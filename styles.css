@@ -12,6 +12,14 @@ form {
     float:right;
     margin-top:-10px;
   }
+  .navbar-brand{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family:"roboto",sans-serif;
+    color:#ffffff
+  }
+    
+
   .navbar-actual {
     height: 65px;
     background: #a3a3a3;
@@ -73,6 +81,7 @@ h2{
 }
 
 p{
+  font-family:"roboto", sans-serif;
   margin-left:900px;
   margin-top:10px;
   max-width:400px;
@@ -80,5 +89,6 @@ p{
   
 #star{
   margin-left: 1050px;
-  
+  margin-top: 200px;
 }
+
