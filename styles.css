@@ -72,23 +72,46 @@ button{
 h1{
   margin-top: 40px;
   font-size: 30pt;
-  margin-left:350px;
 }
 
 h2{
-  margin-left:900px;
   margin-top:200px;
 }
 
 p{
   font-family:"roboto", sans-serif;
-  margin-left:900px;
-  margin-top:10px;
   max-width:400px;
 }
   
-#star{
+#stars{
   margin-left: 1050px;
   margin-top: 200px;
 }
 
+.ratings{
+  
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cafe {
+  display:inline-block;
+  max-width:400px;
+  position:relative;
+  left:60vw;
+  padding-bottom:200px;
+  margin-top:200px;
+}
+
+.photo{
+  margin-left:300px;
+  max-width:900px;
+  display:inline-block;
+}
+
+#icha{
+ width:400px;
+ margin-top:100px;
+
+}
