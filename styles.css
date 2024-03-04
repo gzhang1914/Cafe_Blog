@@ -12,14 +12,14 @@ form {
     float:right;
     margin-top:-10px;
   }
+  /* Grace's Blog */
   .navbar-brand{
     margin-left: 10px;
     margin-bottom: 10px;
     font-family:"roboto",sans-serif;
     color:#ffffff
   }
-    
-
+  /* added outline because the bar wouldn't touch the sides of the screen */
   .navbar-actual {
     height: 65px;
     background: #a3a3a3;
@@ -32,6 +32,7 @@ form {
       text-decoration: none;
     }
 
+/* had to make these tag so that there aren't bulleted lists */
     ul {
       list-style: none;
     }
@@ -41,7 +42,7 @@ form {
       margin-right: 10px;
     }
 
-  /* links */
+  /* ul and li customization */
   ul{
     font-family:"roboto", sans-serif;
       font-size:25px;
@@ -50,6 +51,7 @@ form {
       left:10px;
   }   
 
+  /* search bar customization */
   input {
     all: unset;
     font: 16px system-ui;
@@ -59,6 +61,7 @@ form {
     padding: 6px 10px;
   }
 
+  /* search svg */
   ::placeholder {
     color: #a9a9a9;
     opacity: 0.7; 
@@ -72,6 +75,7 @@ button{
 h1{
   margin-top: 40px;
   font-size: 30pt;
+  margin-left: 300px;
 }
 
 h2{
@@ -82,36 +86,55 @@ p{
   font-family:"roboto", sans-serif;
   max-width:400px;
 }
-  
+/* deb helped with rating and stars */
 #stars{
-  margin-left: 1050px;
-  margin-top: 200px;
+  margin-left: 1500px;
+  margin-top: 800px;
 }
 
 .ratings{
-  
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top:20px;
+  
 }
-
+/* deb helped me with alinging text to screensize */
 .cafe {
   display:inline-block;
   max-width:400px;
   position:relative;
-  left:60vw;
+  left:1vw;
   padding-bottom:200px;
+  background-color: aquamarine;
   margin-top:200px;
 }
 
+/* made class tag so that all photos will remain the same size */
 .photo{
-  margin-left:300px;
-  max-width:900px;
+  margin-right:600px;
   display:inline-block;
+  max-width:100%;height:auto;
+  /* margin didn't work so I tried position */
+  position:relative;left:600px; 
+  top: -90px;
+  background-color:black
+  
 }
 
-#icha{
- width:400px;
- margin-top:100px;
+/*to align photos to text
 
+.cafe-container {
+  display: flex;
+  align-items: center;
 }
+
+.photo {
+  margin-right: 20px;
+}
+
+.cafe {
+  flex: 1;
+}
+
+
