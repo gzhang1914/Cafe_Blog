@@ -122,19 +122,5 @@ p{
   
 }
 
-/*to align photos to text
-
-.cafe-container {
-  display: flex;
-  align-items: center;
-}
-
-.photo {
-  margin-right: 20px;
-}
-
-.cafe {
-  flex: 1;
-}
 
 
