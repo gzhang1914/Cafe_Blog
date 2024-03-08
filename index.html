@@ -1,113 +1,183 @@
 <!DOCTYPE html>
-   <link rel="stylesheet" href="styles.css">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-<!-- nav bar and search credit: W3schools --> 
-   <head>
+<!-- nav bar and search credit: W3schools -->
+<head>
 
- <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Navbar Section -->
-<body>
-
-    <div class="navbar-actual">
-      <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary"> -->
-        <div class="container-fluid">
-          <a class="navbar-brand" >Grace's Blog</a>
-          <div class="collapse-navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Study/Pet Friendly</a>
-              </li>
-              <li class="nav-item">
-                <a  href="fusions.html" tabindex="-1">Fusions</a>
-              </li>
-              <form id="form" role="search">
-                <input type="search" 
-                placeholder="Search..."
-                aria-label="Search through site content">
-<!-- search bar section -->
-                <button>
-              <img src="images/search-icon.svg"/>
-              </button>
-            </ul>
-            </form> 
-            
-          </div>
-
-    </div>
-
-    <!-- <space between nav and header> -->
-    </div>
-    </nav>
-
-<!-- header -->
-
+  <!-- header -->
   <div>
-    <h1> Study/Friendly Cafes </h1>
-  </div>
 
 
-<!-- photo for icha tea -->
-<section> 
-<div class="photo">
-  <img id= "icha" src="images/cup_1.jpg">
-</div>
-</section>
+    <div class="header-container">
+      <h1 class="header-title">GRACE'S TOP CAFE PICKS</h1>
+      <button class="surprise-button" onclick="window.location.href='gallery.html'">Click here for a surprise!</button>
+    </div>
 
-<!-- name of cafe -->
-<section class="cafe">
-  <h2>
-    ICHA TEA
-  </h2>
-
-<!-- description -->
-  <p>
-    Icha tea is the perfect place to wind down with your friends. They have authentic tea that will wind you down and have a peaceful time.
-    <br><br/>
-    Not only that it is great catching up, it was also really great for those who want to study but it could get busy after 3pm.
-    <br><br/>
-    A huge plus for dog owners is that it is dog friendly but not as much during busy times where it can get a bit squishy.
-    <br><br/>
-
-    Study friendly<br>
-    Dog friendly<br>
-    Hangout friendly
- 
-  </p>
+    <h2> STUDY FRIENDLY</h2>
+    <div class="icha-container">
+      <div class="study-friendly-container">
+        <a href="https://www.instagram.com/ichateaca/?hl=en">
+          <img src="images/hallway.jpg" id="icha"></a>
+        <h2>ICHA TEA</h2>
+        <p>
+          great for drinking authentic Chinese tea
+          <br></br>
+          outlets everywhere! - except middle table
+          <br></br>
+          can bring little furry friend
+          <br></br>
+          location: 235 spadina ave. unit 4
+        </p>
+      </div>
 
 
-<!-- neo coffee bar -->
-<!-- neo was under icha tea just fine and then I did smth and now it is overlapping TT -->
-  <h2>NEO COFFEE BAR</h2>
+      <!-- delted the svg star bc I thought emoji stare looked better -->
+      <!-- neo coffee bar -->
+      <!-- neo was under icha tea just fine and then I did smth and now it is overlapping TT -->
 
-  <p>
-    Neo Cafe Bar is one of my top cafes to work at. They not only have amazing coffee but they also have authentic Janapense tea. 
-    <br><br/>
-    When you step inside you will istantly feel like you are in a luxurious cafe with the wood and warm lights around.
-    <br><br/>
-    A huge plus for dog owners is that it is dog friendly but not as much during busy times where it can get a bit squishy.
-    <br><br/>
- 
-<!-- added a lot of break and then changed code to <section> -->
-     Study friendly<br>
-      Dog friendly<br>
-      Hangout friendly
-    </p>
+      <div class="neo-container">
+        <a href="https://www.neocoffeebar.com/">
+          <img src="images/neo.jpeg" id="neo"></a>
+        <h2>NEO COFFEE BAR</h2>
+        <!-- description -->
+        <p>
+          yummy authentic japanese drinks
+          <br></br>
+          outlet under every couch
+          <br></br>
+          great for intense studying
+          <br></br>
+          location: 61 spadina ave.
+        </p>
+        <!-- added a lot of break and then changed code to <section> -->
+      </div>
+
+      <!-- wanted to name class as "5scafe-container but wouldn't work" -->
+      <div class="Scafe-container">
+        <a href="https://taplink.cc/5scafe?from=qr/">
+          <img src="images/5s.png" id="Scafe"></a>
+        <h2> 5S CAFE </h2>
+        <p>
+          cozy and have unqiue pastries
+          <br></br>
+          outlet beside big table - not too accesable
+          <br></br>
+          have treats for ur furry friend
+          <br></br>
+          location: 6 denison ave
+        </p>
+      </div>
+    </div>
     <!-- realized that block was abitious and replaced it with a star -->
     <!-- Deb helped me change placement of the stars -->
-    <div class="ratings">
-      <img id="star" src="images/star.svg"/>
-     <img id="star" src="images/star.svg"/>
-      <img id="star" src="images/star.svg"/>
-   </div>  
-</section>
+    <!-- changed the star to an emoji because I thought the emoji star made the website look less serious -->
+
+    <div class="pet-friendly-container">
+      <h2> PET FRIENDLY</h2>
+      <div class="bevy-container">
+        <a href="https://www.bevy.space//">
+          <img src="images/bevy.png" id="bevy"></a>
+        <h2> BEVY</h2>
+        <p>
+          huge space for dogs to have fun!
+          <br></br>
+          best during the summer/spring times
+          <br></br>
+          have a small area for art lovers!
+          <br></br>
+          location: 738 Dundas st east
+        </p>
+      </div>
+
+      <div class="cafe-twentythree-container">
+        <a href="https://www.instagram.com/cafe23coffeebar/">
+          <img src="images/cafetwentythree.png" id="cafe-tt">
+        </a>
+        <h2> CAFE 23</h2>
+        <p>
+          perfect place if you want to go for somwhere that is aesthetic
+          <br></br>
+          fairytale-like patio outside
+          <br></br>
+          sip drinks outside with fur baby
+          <br></br>
+          locaiton: 728 queen st w
+
+        </p>
+      </div>
+
+      <div class="forestcafe-container">
+        <a href="https://forestcafetoronto.com/">
+          <img src="images/forestcafe.png" id="forest">
+        </a>
+        <h2> FOREST CAFE</h2>
+        <p>
+          yummy pastries
+          <br></br>
+          cute place to do hmwk too!
+          <br></br>
+          rlly good to bring ur dog with u if it has seperation anxiety!
+          <br></br>
+          location: 56 forest Manor rd unit5
+        </p>
+      </div>
+    </div>
+
+    <div class="cute-cafe-container">
+      <h2> CUTE CAFES</h2>
+      <div class="carboniccafe-container">
+        <a href="https://carboniccoffee.netlify.app/">
+          <img src="images/carbonic.jpeg" id="carbonic">
+        </a>
+        <h2> CARBONIC</h2>
+        <p>
+          great for looking for an aesthetic place to study
+          <br></b>
+          can also bring doggo
+          <br></br>
+          not too ideal for studying
+          <br></br>
+          location: 37 baldwin st
+        </p>
+      </div>
 
 
+      <div class="archcafe-container">
+        <a href="https://www.instagram.com/the.arch.cafebar/">
+          <img src="images/thearch.png" id="arch">
+        </a>
+        <h2> THE ARCH</h2>
+        <p>
+          nice and cozy!
+          <b r></b>
+          can also bring doggo!!!
+          <br></br>
+          yummy drinks and yummy food
+          <br></br>
+          location: 293 augusta ave
+        </p>
+      </div>
 
-
-</body>
-</html>
+      <div class="ninetailscoffee-container">
+        <a href="https://www.ninetailscoffeebar.ca/">
+          <img src="images/ninetails.png" id="ninetails">
+        </a>
+        <h2> NINETAILS COFFEE</h2>
+        <p>
+          nice and cozy!
+          <b r></b>
+          can also bring doggo!!!
+          <br></br>
+          yummy drinks and yummy food
+          <br></br>
+          398 spadina ave
+        </p>
+      </div>
+    </div>
+    </body>
+    </html>

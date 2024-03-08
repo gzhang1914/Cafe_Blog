@@ -1,117 +1,364 @@
-
-/*top bar*/
-form {
-    background-color: #ffffff;
-    width: 300px;
-    height: 50px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    float:right;
-    margin-top:-10px;
-  }
-  .navbar-brand{
-    margin-left: 10px;
-    margin-bottom: 10px;
-    font-family:"roboto",sans-serif;
-    color:#ffffff
-  }
-    
-
-  .navbar-actual {
-    height: 65px;
-    background: #a3a3a3;
-    outline: solid rgb(163, 163, 163);
-    outline-width: 9px;
-    }
-
-    .collapse-navbar-collapse a {
-      color: white;
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    li {
-      display: inline;
-      margin-right: 10px;
-    }
-
-  /* links */
-  ul{
-    font-family:"roboto", sans-serif;
-      font-size:25px;
-      margin-left:150px;
-      margin-top:1px;
-      left:10px;
-  }   
-
-  input {
-    all: unset;
-    font: 16px system-ui;
-    color: #ffffff;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;
-  }
-
-  ::placeholder {
-    color: #a9a9a9;
-    opacity: 0.7; 
-  }
-
-button{
-  background-color: transparent;
-  border: transparent;
+body {
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  margin-top: 30px;
 }
 
-h1{
+
+/* didn't like the huge space between line breaks */
+/* margin didn't work */
+/* line-height:%; from stackoverflow also didnt' work */
+
+h1 {
   margin-top: 40px;
   font-size: 30pt;
+  margin-left: 40px;
+  color: #5A3C0E;
+  font-family: "Inter", sans-serif;
 }
 
-h2{
-  margin-top:200px;
+.study-friendly-container h2 {
+  color: #795831;
 }
 
-p{
-  font-family:"roboto", sans-serif;
-  max-width:400px;
-}
-  
-#stars{
-  margin-left: 1050px;
-  margin-top: 200px;
+.pet-friendly-container h2 {
+  color: #5A3C0E;
 }
 
-.ratings{
-  
-  display:flex;
-  flex-direction: row;
+.cute-cafe-container h2 {
+  color: #7D5921;
+}
+
+h2 {
+  margin-left: 40px;
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+}
+
+/* container wrapper didn't work */
+/* in-line didn't work */
+.Scafe-container {
+  margin-top: -400px;
+
+}
+
+/* chatpgt helped me with this because h2 kept moving with <p> */
+.icha-container h2 {
+  margin-top: -188px;
+  margin-left: 290px;
+  color: #5A3C0E;
+}
+
+.icha-container p {
+  max-width: 190px;
+  color: #281800;
+  margin-left: 290px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+#icha {
+  width: 236px;
+  max-height: 198px;
+  height: 198px;
+  object-fit: fill;
+  margin-left: 40px;
+}
+
+
+/* h2 containers */
+.neo-container h2 {
+  margin-left: 778px;
+  margin-top: -188px;
+}
+
+/* shifted it a little bit so that the corners line up */
+.neo-container {
+  margin-left: -30px;
+}
+
+.neo-container p {
+  font-family: "Inter", sans-serif;
+  max-width: 180px;
+  color: #281800;
+  margin-left: 778px;
+  margin-top: 30px;
+  /* margin-bottom:178px;  */
+  font-size: 13px;
+}
+
+/* margin-right didn't move the img */
+/* float didn't work */
+#neo {
+
+  width: 236px;
+  max-height: 198px;
+  height: 198px;
+  object-fit: fill;
+  position: relative;
+  left: 528px;
+
+}
+
+
+.Scafe-container h2 {
+  margin-left: 1230px;
+  margin-top: -180px;
+}
+
+.Scafe-container p {
+  font-family: "Inter", sans-serif;
+  max-width: 200px;
+  color: #281800;
+  margin-left: 1230px;
+  margin-bottom: 350px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+#Scafe {
+  width: 236px;
+  max-height: 198px;
+  height: 198px;
+  object-fit: fill;
+  margin-left: 980px;
+}
+
+.pet-friendly-container {
+  font-size: 15px;
+  margin-bottom: 200px;
+}
+
+
+
+.bevy-container {
+  margin-top: 140px;
+}
+
+.bevy-container img {
+  margin-top: -20px;
+}
+
+.bevy-container h2 {
+  margin-left: 290px;
+  margin-top: -199px;
+  color: #5A3C0E;
+}
+
+.bevy-container p {
+  font-family: "Inter", sans-serif;
+  max-width: 180px;
+  color: #5A3C0E;
+  margin-left: 290px;
+  margin-top: -15px;
+  font-size: 13px;
+  color: 795831;
+}
+
+
+#bevy {
+  width: 236px;
+  height: 198px;
+  object-fit: fill;
+  margin-left: 40px;
+  margin-top: -125px;
+}
+
+.cafetwentythree h2 {
+  margin-left: 798px;
+}
+
+.cafe-twentythree-container h2 {
+  margin-left: 750px;
+  margin-top: -190px;
+  color: #5A3C0E;
+}
+
+.cafe-twentythree-container p {
+  font-family: "r", sans-serif;
+  max-width: 180px;
+  margin-left: 750px;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #5A3C0E;
+}
+
+#cafe-tt {
+  width: 236px;
+  height: 198px;
+  object-fit: fill;
+  margin-left: 499px;
+}
+
+.forestcafe-container h2 {
+  margin-left: 1230px;
+  margin-top: -199px;
+  color: #5A3C0E;
+}
+
+.forestcafe-container p {
+  font-family: "roboto", sans-serif;
+  max-width: 180px;
+  color: #5A3C0E;
+  margin-left: 1230px;
+  margin-top: -5px;
+  font-size: 13px;
+}
+
+.forestcafe-container {
+  margin-top: -260px;
+}
+
+#forest {
+  width: 236px;
+  height: 198px;
+  object-fit: fill;
+  margin-left: 980px;
+  margin-top: -2000px;
+}
+
+/* makes space between the pet friendly and cute cafe container */
+.cute-cafe-container {
+  margin-top: 350px;
+}
+
+.carboniccafe-container h2 {
+  margin-left: 290px;
+  margin-top: -160px;
+  color: #7D5921;
+}
+
+.carboniccafe-container p {
+  font-family: "roboto", sans-serif;
+  max-width: 180px;
+  margin-left: 290px;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #7D5921;
+}
+
+#carbonic {
+  width: 236px;
+  height: 198px;
+  object-fit: fill;
+  margin-left: 40px;
+  margin-top: -5px;
+}
+
+
+.archcafe-container h2 {
+  margin-left: 750px;
+  margin-top: -160px;
+  color: #724C13
+}
+
+.archcafe-container p {
+  font-family: "roboto", sans-serif;
+  max-width: 180px;
+  color: #724C13;
+  margin-left: 750px;
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+#arch {
+  width: 236px;
+  height: 198px;
+  object-fit: fill;
+  margin-left: 499px;
+  margin-top: -5px;
+}
+
+/* added margin-bottom for more space at the bottom */
+.ninetailscoffee-container {
+  margin-top: -400px;
+  margin-bottom: 300px;
+}
+
+.ninetailscoffee-container h2 {
+  margin-left: 1230px;
+  margin-top: -155px;
+  color: #724C13;
+}
+
+.ninetailscoffee-container p {
+  font-family: "roboto", sans-serif;
+  max-width: 180px;
+  color: #724C13;
+  margin-left: 1230px;
+  font-size: 13px;
+}
+
+#ninetails {
+  width: 236px;
+  height: 198px;
+  object-fit: fill;
+  margin-left: 980px
+}
+
+/* gallery  */
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%
+}
+
+/* Style the images inside the grid */
+.column img {
+  width: 400px;
+  height: auto;
+  margin-left: 110px;
+  margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+.surprise-button {
+  margin-right: 100px;
+  border-radius: 6px;
+  border: 0px;
+  padding: 10px;
+}
+
+/* deb helped me with alinging text to screensize */
+
+
+/* made class tag so that all photos will remain the same size */
+/* deleted a lot of the "." and "#" becuase i decided to restart*/
+
+
+
+
+/* deleted display: inline-block to put carousel and text in same container */
+/* deleted carousel and nav bar because new design didn't need it */
+
+.header-container {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: auto;
 }
 
-.cafe {
-  display:inline-block;
-  max-width:400px;
-  position:relative;
-  left:60vw;
-  padding-bottom:200px;
-  margin-top:200px;
-}
-
-.photo{
-  margin-left:300px;
-  max-width:900px;
-  display:inline-block;
-}
-
-#icha{
- width:400px;
- margin-top:100px;
-
+.header-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
